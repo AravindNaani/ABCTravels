@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class UserUtil {
 
-	static Scanner scn = new Scanner(System.in);
+	static Scanner scn = new  Scanner(System.in);
 	static List<User> users = new ArrayList<>();
 	static Map<String,Integer> invalidLoginAttempts = new HashMap<>();
 	

@@ -73,22 +73,5 @@ public class RouteUtil {
 		return null;
 	}
 	
-	public static void showRoutes(List<Route> searchedRoutes,int noOfPassengers) {
-		if(searchedRoutes.isEmpty()) {
-			System.out.println("------------ Searched Routes are not Available -------------");
-		}
-		else {
-			for(Route route : searchedRoutes) {
-				System.out.println("-----------------------------------------------------------------------------");
-				System.out.println("|  "+route.getSource()+"   --->   "+route.getDestination()+" | Date :: "+route.getJourneyDate()+" |   Price per Seat: "+route.getPricePerTicket()+"  |");
-				System.out.println("-----------------------------------------------------------------------------");
-				double cost = noOfPassengers*route.getPricePerTicket();
-				System.out.println("-------------------------------------------------");
-				System.out.println("                  FARE DETAILS                   ");
-				System.out.println("-------------------------------------------------");
-				System.out.println("|          "+noOfPassengers +"  *  "+route.getPricePerTicket()+"   =   "+cost+"                   |");
-				System.out.println("-------------------------------------------------");
-			}
-		}
-	}
+	
 }
